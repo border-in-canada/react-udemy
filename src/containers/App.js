@@ -82,6 +82,7 @@ class App extends Component {
     this.setState({showPersons: !doesShow});
   }
 
+<<<<<<< HEAD
   loginHandler = () => {
     this.setState({authenticated: true});
   };
@@ -90,11 +91,17 @@ class App extends Component {
     console.log('[App.js] render');
     let persons = null;
     
+=======
+  render () {
+    let persons = null;
+  
+>>>>>>> 886a6e7d28bae66fba376db548665050506f0698
     if (this.state.showPersons){
       persons = ( 
         <Persons 
         persons={this.state.persons} 
         clicked={this.deletePersonsHandler}
+<<<<<<< HEAD
         changed={this.nameChangedHandler}
         isAuthenticated={this.state.authenticated}
         />
@@ -124,6 +131,21 @@ class App extends Component {
         </AuthContext.Provider>
         
       </Aux>
+=======
+        changed={this.nameChangedHandler} />
+       );   
+    }
+
+    return (
+      <div className={classes.App}>
+        <Cockpit
+          title={this.props.appTitle}
+          showPersons={this.state.showPersons}
+          persons={this.state.persons}
+          clicked={this.togglePersonsHandler} />
+        {persons}
+      </div>
+>>>>>>> 886a6e7d28bae66fba376db548665050506f0698
     
     ); 
   }

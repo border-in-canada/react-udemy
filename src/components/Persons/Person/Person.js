@@ -4,6 +4,7 @@ import Aux from '../../../hoc/Aux';
 import withClass from '../../../hoc/withClass';
 import AuthContext from '../../../context/auth-context';
 
+<<<<<<< HEAD
 class Person extends Component {
 
     constructor(props) {
@@ -35,6 +36,16 @@ class Person extends Component {
             </Aux>
             );
     };
+=======
+const person = (props) => {
+    return (
+    <div className={classes.Person}>
+        <p onClick={props.click}>I'm {props.name} and I am {props.age} years old!!</p>
+        <p>{props.children}</p>
+        <input type="text" onChange={props.changed} value={props.name} />
+    </div>
+    ) 
+>>>>>>> 886a6e7d28bae66fba376db548665050506f0698
 };
 
 export default withClass(Person, classes.Person);
