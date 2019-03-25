@@ -16,7 +16,7 @@ class Person extends Component {
         this.inputElementRef.current.focus();
     }
     render() {
-        console.log('[Person.js] rendering...');
+        console.log('[Person.js] rendering....');
         return (
             <Aux>
                 <AuthContext.Consumer>
