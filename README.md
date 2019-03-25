@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project is a code-along with the Udemy course "React - The Complete Guide" by Maximillian Schwartz. Eventually the app ejects from CRA so that external styling and customized Webpack options could be utilized.
 
 ## Available Scripts
 
